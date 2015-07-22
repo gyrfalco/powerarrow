@@ -33,7 +33,8 @@ end
 
 --{{---| Theme |------------------------------------------------------------------------------------
 
-config_dir = ("/home/rom/.config/awesome/")
+home_dir    = os.getenv("HOME")
+config_dir  = homedir   .. "/.config/awesome"
 themes_dir = (config_dir .. "/themes")
 beautiful.init(themes_dir .. "/powerarrow/theme.lua")
 
