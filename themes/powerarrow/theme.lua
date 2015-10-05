@@ -14,7 +14,11 @@ white = "#ffffff"
 
 theme = {}
 
-theme.wallpaper_cmd = { "awsetbg " .. themes_dir .. "/powerarrow/wallpapers/wallpaper-2552963.jpg" }
+if wallpaper == nil then
+  wallpaper = themes_dir .. "/powerarrow/wallpapers/wallpaper-2552963.jpg"
+end
+
+theme.wallpaper_cmd = { "awsetbg " .. wallpaper }
 
 theme.font                                  = "Terminus 9"
 theme.fg_normal                             = "#AAAAAA"
